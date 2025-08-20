@@ -36,7 +36,7 @@ def regular_hash_flow(attacker_present: bool):
         print("\n[Receiver] Receiving message...")
         time.sleep(2)
         recv_digest = hash_message(attacker_msg)
-        print(f"[Receiver] Message: {message} with Computed hash: {recv_digest}")
+        print(f"[Receiver] Message: {attacker_msg} with Computed hash: {recv_digest}")
         print("[Receiver] ✅ Message is verified (BUT it was from attacker!)")
         print("⚠️ Problem: Regular hash cannot detect attacker interception.")
 
